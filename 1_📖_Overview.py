@@ -13,7 +13,7 @@ st.subheader("🤖 About Transformer")
 st.write("The transformer architecture is a neural network architecture that is primarily used for natural language processing tasks. The transformer architecture is based on the idea of self-attention, which allows the model to weigh the importance of different words in a sentence when making predictions. Unlike RNNs, which process text in a sequential manner, Transformers utilize self-attention to compute the attention weight of each word in the input text in parallel, enabling more efficient parallelization for training larger models as compared to RNNs (Vaswani et al., 2017).")
 st.write("The transformer architecture consists of an encoder and a decoder. The encoder takes in a sequence of words and produces a fixed-length representation of the input sentence, also called the context vector. The decoder then takes this context vector and produces the output, which can be a translation, a summary, or a label in a classification task. The encoder and decoder are made up of multiple layers of self-attention mechanism and feed-forward neural networks.")
 
-trans = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/transformer.png")
+trans = Image.open("data/transformer.png")
 st.image(trans, caption="General Transformer Architecture")
 
 st.subheader("BERT 🆚 DeBERTa")
@@ -22,7 +22,7 @@ st.write("BERT  is a pre-trained deep learning model that is used for natural la
 st.subheader("DeBERTa (Decoding-enhanced BERT with disentangled attention)")
 st.write("DeBERTa enhances the BERT model by adding a decoding mechanism to the pre-training task. This decoding mechanism allows the model to generate text, which improves the ability of the model to understand the context and meaning of the text. Additionally, DeBERTa uses disentangled attention, which separates the self-attention mechanism into two parts: one for modelling the context and the other for modelling the dependencies between words. This allows the model to focus on different aspects of the text, leading to a more accurate understanding of the text. He et al., (2020) in his paper, unlike BERT, where each word is represented by a combination of its content embedding vector and its position embedding vector, DeBERTa separates semantic (content) and syntactic (position) representation by computing four different attention scores between words: content-to-content, content-to-position, position-to-content, and position-to-position.")
 
-deb = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/deberta.png")
+deb = Image.open("data/deberta.png")
 st.image(deb, caption="Difference in DeBERTa Architecture")
 
 st.subheader("⛏️ Aspect Term Extraction")
