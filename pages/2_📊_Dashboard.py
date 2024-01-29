@@ -7,9 +7,9 @@ st.header("🗯️ Word Clouds")
 labels = ['Positive',"Neutral", "Negative"]
 cloud = st.radio("Choose word cloud type:", labels,horizontal=True)
 
-pos = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/poscloud.png")
-neu = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/neutralcloud.png")
-neg = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/negativecloud.png")
+pos = Image.open("data/poscloud.png")
+neu = Image.open("data/neutralcloud.png")
+neg = Image.open("data/negativecloud.png")
 
 if cloud == 'Positive':
     st.subheader("🟢 Positive")
@@ -31,20 +31,20 @@ sentiment_labels = ['Overall','Positive',"Neutral", "Negative"]
 gram = st.radio("Choose n-grams:", ngram,horizontal=True)
 gram_labels = st.radio("Choose sentiment type:", sentiment_labels,horizontal=True)
 
-all1 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/OveralUni.png")
-pos1 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/PositiveUni.png")
-neu1 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NeutralUni.png")
-neg1 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NegativeUni.png")
+all1 = Image.open("data/ngram/OveralUni.png")
+pos1 = Image.open("data/ngram/PositiveUni.png")
+neu1 = Image.open("data/ngram/NeutralUni.png")
+neg1 = Image.open("data/ngram/NegativeUni.png")
 
-all2 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/OveralBi.png")
-pos2 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/PositiveBi.png")
-neu2 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NeutralBi.png")
-neg2 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NegativeBi.png")
+all2 = Image.open("data/ngram/OveralBi.png")
+pos2 = Image.open("data/ngram/PositiveBi.png")
+neu2 = Image.open("data/ngram/NeutralBi.png")
+neg2 = Image.open("data/ngram/NegativeBi.png")
 
-all3 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/OveralTri.png")
-pos3 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/PositiveTri.png")
-neu3 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NeutralTri.png")
-neg3 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/ngram/NegativeTri.png")
+all3 = Image.open("data/ngram/OveralTri.png")
+pos3 = Image.open("data/ngram/PositiveTri.png")
+neu3 = Image.open("data/ngram/NeutralTri.png")
+neg3 = Image.open("data/ngram/NegativeTri.png")
 
 
 if gram == 'Unigram' and gram_labels == 'Positive':
