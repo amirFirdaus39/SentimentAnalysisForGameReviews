@@ -1,0 +1,8 @@
+﻿Model,Accuracy,Precision,F1,Recall
+StanfordNLP,0.37,0.52,0.35,0.53
+SentiStr,0.52,0.56,0.47,0.63
+NLTK ,0.61,0.6,0.54,0.7
+BERT (pre-trained),0.75,0.56,0.64,0.75
+DeBERTa (pre-trained),0.78,0.73,0.75,0.78
+DeBERTa (trained V1),0.89,0.84,0.82,0.81
+DeBERTa (trained V2),0.93,0.93,0.93,0.93
