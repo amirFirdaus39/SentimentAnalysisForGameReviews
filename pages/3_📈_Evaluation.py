@@ -7,16 +7,16 @@ st.title("📈 Models Evaluation")
 
 st.subheader("✏️ Results Table")
 
-df = pd.read_csv("D:/Sem 5/WIH3001 Data Science Project/findings/Result.csv")
+df = pd.read_csv("data/Result.csv")
 st.dataframe(df)
 
 metric_names = ["Accuracy", "Precision", "F1", "Recall"]
 metric = st.radio("Choose an evaluation metric: ", metric_names, horizontal=True)
 
-acc = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/accuracy2.png")
-prec = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/precision2.png")
-f1 = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/f1_2.png")
-rec = Image.open("D:/Sem 5/WIH3001 Data Science Project/findings/recall2.png")
+acc = Image.open("data/accuracy2.png")
+prec = Image.open("data/precision2.png")
+f1 = Image.open("data/f1_2.png")
+rec = Image.open("data/recall2.png")
 
 if metric == 'Accuracy':
     st.subheader("🟦 Accuracy")
